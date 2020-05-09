@@ -15,6 +15,8 @@ while(res!="no"):
                     print("Se han Censado 5 Hombres Mayores de Edad")
             else:
                 Hmenor+=1
+                if(Hmenor==5):
+                    print("Se han Censado 5 Hombres Menores de Edad")
         else:
             if(edad>=18):
                 Mmayor+=1
@@ -22,10 +24,9 @@ while(res!="no"):
                     print("Se han Censado 5 Mujeres Mayores de Edad")
             else:
                 Mmenor+=1
-        if(Hmenor==5):
-            print("Se han Censado 5 Hombres Menores de Edad")
-        if(Mmenor==5):
-            print("Se han Censado 5 Mujeres Menores de Edad")
+                if(Mmenor==5):
+                   print("Se han Censado 5 Mujeres Menores de Edad")
+        
         suma+=1
     else:
         print("Sexo Erroneo")
