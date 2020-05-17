@@ -9,14 +9,14 @@ cantCompraCoca=0
 clientes=0
 totalDeProductos=0
 gananciaTotal=0
+lecheCantidad=100
+huevoCantidad=100
+sabritasCatidad=100
+cocaCantidad=100
 res=input("Cerrar la Tienda: ")
 while(res!="si"):
     res=input("Decea seleccionar un producto: ")
     while(res!="no"):
-        lecheCantidad=100
-        huevoCantidad=100
-        sabritasCatidad=100
-        cocaCantidad=100
         print("Leche Ingresa-->1")
         print("Huevos Ingresa-->2")
         print("Sabritas Ingresa-->3")
@@ -26,19 +26,19 @@ while(res!="si"):
 
             if(num==1):
                 cantidad=int(input("Ingresa la Cantidad: "))
-                lecheCantidad-=cantidad
+                lecheCantidad=lecheCantidad-cantidad
                 cantCompraLeche+=cantidad
             if(num==2):
                 cantidad=int(input("Ingresa la Cantidad: "))
-                huevoCantidad-=cantidad
+                huevoCantidad=huevoCantidad-cantidad
                 cantCompraHuevo+=cantidad
             if(num==3):
                 cantidad=int(input("Ingresa la Cantidad: "))
-                sabritasCatidad-=cantidad
+                sabritasCatidad=sabritasCatidad-cantidad
                 cantCompraSabritas+=cantidad
             if(num==4):
                 cantidad=int(input("Ingresa la Cantidad: "))
-                cocaCantidad-=cantidad
+                cocaCantidad=cocaCantidad-cantidad
                 cantCompraCoca+=cantidad
             totalDeProductos=cantCompraCoca+cantCompraHuevo+cantCompraLeche+cantCompraSabritas
             gananciaTotal=(cantCompraCoca*cocaPrecio)+(cantCompraHuevo*huevoPrecio)+(cantCompraLeche*lechePrecio)+(cantCompraSabritas*sabritasPrecio)
