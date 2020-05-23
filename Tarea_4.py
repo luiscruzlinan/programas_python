@@ -37,7 +37,7 @@ res=input("Cerrar la Tienda: ")
 while(res!="si"):
     print(opciones_de_cliente)
     res=random.randint(1,6)
-    while(res!="no"):
+    while(res!=1):
         if(coca == 0 and huevo == 0 and leche == 0 and sabritas == 0):
              print("La tienda ha cerrado, productos agotados")
              break
@@ -92,7 +92,8 @@ while(res!="si"):
                         coca_por_cliente=coca_por_cliente+cantidad
             else:
              print("Producto erroneo")
-        res=input("Despues de seleccionar otro producto: ")
+        print(opciones_de_cliente)
+        res=random.randint(1,6)
     total_cliente = total_coca + total_huevo + total_leche + total_sabritas
     venta_total = venta_total + total_cliente
     total_productos = can_coca + can_huevo + can_leche + can_sabritas
