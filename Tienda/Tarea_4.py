@@ -1,8 +1,10 @@
 import random
-leche=["Cantidad: ",100,"Precio: ",20]
-huevo=["Cantidad: ",100,"Precio: ",18.5]
-sabritas=["Cantidad: ",100,"Precio: ",12.5]
-coca=["Cantidad: ",100,"Precio: ",25]
+cantidad="Cantidad: "
+precio="Precio: "
+leche=[cantidad,100,precio,20]
+huevo=[cantidad,100,precio,18.5]
+sabritas=[cantidad,100,precio,12.5]
+coca=[cantidad,100,precio,25]
 opciones_de_cliente=["1 - no","2 - si","3 - Claro","4 - Por supuesto","5 - Mejor hagame el amor","6 - Ponme en 4 y dame duro por el cucurucho papi"]
 clientes = 0
 venta_total=0

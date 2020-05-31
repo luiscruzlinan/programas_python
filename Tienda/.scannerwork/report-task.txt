@@ -1,0 +1,6 @@
+projectKey=Tienda
+serverUrl=http://localhost:9000
+serverVersion=8.3.1.34397
+dashboardUrl=http://localhost:9000/dashboard?id=Tienda
+ceTaskId=AXJszeE0kHskX6G5ZmhL
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AXJszeE0kHskX6G5ZmhL
