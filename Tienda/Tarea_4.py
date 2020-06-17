@@ -1,4 +1,9 @@
 import random
+def Menu():
+    print("Leche Ingresa-->1")
+    print("Huevos Ingresa-->2")
+    print("Sabritas Ingresa-->3")
+    print("Coca Ingresa-->4")
 cantidad="Cantidad: "
 precio="Precio: "
 leche=[cantidad,100,precio,20]
@@ -44,10 +49,7 @@ while(res!="si"):
              print("La tienda ha cerrado, productos agotados")
              break
         else:
-            print("Leche Ingresa-->1")
-            print("Huevos Ingresa-->2")
-            print("Sabritas Ingresa-->3")
-            print("Coca Ingresa-->4")
+            Menu()
             num=random.randint(1,4)
             if(num==1 or num==2 or num==3 or num==4):
 
